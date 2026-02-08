@@ -1,0 +1,34 @@
+<config>
+
+    <interface hosts="host0" names="eth0" address="144.122.238.21"/>
+    <interface hosts="host1" names="eth0" address="144.122.238.22"/>
+    <interface hosts="host2" names="eth0" address="144.122.238.23"/>
+    <interface hosts="router0" towards="host0 host1 host2" address="144.122.238.24"/>
+    
+    <interface hosts="host3" names="eth0" address="144.122.238.60"/>
+    <interface hosts="host4" names="eth0" address="144.122.238.61"/>
+    <interface hosts="host5" names="eth0" address="144.122.238.62"/>
+    <interface hosts="router1" towards="host3 host4 host5" address="144.122.238.63"/>
+
+    <interface hosts="host6" names="eth0" address="144.122.238.85"/>
+    <interface hosts="host7" names="eth0" address="144.122.238.86"/>
+    <interface hosts="host8" names="eth0" address="144.122.238.87"/>
+    <interface hosts="router2" towards="host6 host7 host8" address="144.122.238.88"/>
+
+    <interface hosts="router*" address="144.122.239.x"/>
+
+    <route hosts="router0"
+           destination="144.122.238.85"
+           netmask="255.255.255.255"
+           gateway="144.122.239.2"
+           interface="eth1"
+           metric="0"/>
+
+    <route hosts="router2"
+           destination="144.122.238.21"
+           netmask="255.255.255.255"
+           gateway="144.122.239.18"
+           interface="eth3"
+           metric="0"/>
+
+</config>
