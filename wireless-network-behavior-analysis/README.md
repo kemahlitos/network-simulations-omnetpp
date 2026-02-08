@@ -47,3 +47,5 @@ and repeatable comparisons.
 The purpose of this study is to demonstrate **wireless network reasoning through simulation**,
 with a focus on protocol behavior, physical constraints, and their combined impact on
 observable network performance.
+
+Experiments video link: https://youtu.be/YiToUSxyICw
