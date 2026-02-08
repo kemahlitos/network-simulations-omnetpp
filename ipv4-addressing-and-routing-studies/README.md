@@ -50,3 +50,5 @@ allowing reproducible network setups.
 The goal of this study is to demonstrate **practical understanding of IPv4 addressing
 and routing mechanisms**, with a focus on configuration correctness, routing logic,
 and network-level reasoning rather than raw performance metrics.
+
+Experiments video link: https://youtu.be/k4EQS32FZmg
